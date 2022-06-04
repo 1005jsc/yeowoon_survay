@@ -56,8 +56,6 @@ background-color: #524882;
 padding-top: 10px; 
 padding-bottom: 10px; 
 margin-bottom: 30px;
-
-
 `
 
 

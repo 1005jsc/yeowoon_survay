@@ -8,6 +8,7 @@ import * as QuestionPage from './src/components/design_pamphlet/question_page/qu
 import { Dimensions } from 'react-native';
 import { StatusBarView } from './src/components/design_pamphlet/common_components/common_components.style';
 import { SurvayStart } from './src/components/design_pamphlet/survay_start/survay_start_design';
+import { ResultPage } from './src/components/design_pamphlet/result_page/result_page_design';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -32,7 +33,8 @@ export default function App() {
 
   return (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="SurvayStart">
+    <Stack.Navigator initialRouteName="ResultPage">
+      <Stack.Screen name="ResultPage" component={ResultPage} options={{ headerShown: false }}/> 
       <Stack.Screen name="SurvayStart" component={SurvayStart} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo1" component={QuestionPage.No1} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo2" component={QuestionPage.No2} options={{ headerShown: false }} />
