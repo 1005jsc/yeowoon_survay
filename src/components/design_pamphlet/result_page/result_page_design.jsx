@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import { ScrollView, StyleSheet } from 'react-native';
 import * as R  from './result_page_components/result_page_components';
 import { ImageImg, StatusBarView } from '../common_components/common_components.style';
-import { HashTagText, LogoText, ResultText, TitleText } from './result_page_components/result_page_components.style';
+import { ButtonToKakaotalkShareText, ButtonToTripDiaryText, HashTagText, LogoText, ResultText, TitleText } from './result_page_components/result_page_components.style';
 
 
 
@@ -65,9 +65,14 @@ export function ResultPage({ navigation }) {
 
                 <R.TypeExplanationView3></R.TypeExplanationView3>
 
-                <R.ButtonToTripDiaryView></R.ButtonToTripDiaryView>
+                <R.ButtonToTripDiaryView>
+                    <ButtonToTripDiaryText>여운 App으로 나의 {'\n'}여행 기록해보기</ButtonToTripDiaryText>
+                </R.ButtonToTripDiaryView>
 
-                <R.ButtonToKakaotalkShareView></R.ButtonToKakaotalkShareView>
+                <R.ButtonToKakaotalkShareView>
+                    <ButtonToKakaotalkShareText>친구에게 내 결과 공유하기</ButtonToKakaotalkShareText>
+
+                </R.ButtonToKakaotalkShareView>
 
 
             </R.FirstView>
