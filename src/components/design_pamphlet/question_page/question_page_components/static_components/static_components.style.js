@@ -66,10 +66,10 @@ height: 140px;
 export const ChoiceView = styled.View`
 
 width: 80%;
-border: 2px solid #8A7DCA;
-padding-top: 10px; 
-padding-bottom: 10px; 
-margin-bottom: 30px;
+// border: 2px solid #8A7DCA;
+// padding-top: 10px; 
+// padding-bottom: 10px; 
+// margin-bottom: 30px;
 
 
 

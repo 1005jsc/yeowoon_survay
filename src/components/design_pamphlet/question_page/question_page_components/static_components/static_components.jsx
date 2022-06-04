@@ -1,4 +1,5 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native-web';
 import * as S from './static_components.style'
 
 
