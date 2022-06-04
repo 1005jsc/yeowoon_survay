@@ -2,12 +2,11 @@ import * as React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import * as S from './question_page_components/static_components/static_components';
-import { ChoiceText, PageIndicator, QuestionText, QuestionView, StatusBarView } from './question_page_components/static_components/static_components.style';
-import { ImageImg } from './question_page_components/dynamic_components/dynamic_components.style';
 import styled from 'styled-components/native'
 import { TouchableOpacity } from 'react-native';
-
+import { ImageImg, StatusBarView } from '../common_components/common_components.style';
+import * as S from './question_page_components/static_components/static_components'
+import { ChoiceText, PageIndicator, QuestionText } from './question_page_components/static_components/static_components.style';
 
 
 
@@ -157,7 +156,6 @@ export function No3({ navigation }) {
 
         </S.FirstView>
     
-
 
 
     );
