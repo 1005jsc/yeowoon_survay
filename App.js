@@ -33,8 +33,7 @@ export default function App() {
 
   return (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="ResultPage">
-      <Stack.Screen name="ResultPage" component={ResultPage} options={{ headerShown: false }}/> 
+    <Stack.Navigator initialRouteName="SurvayStart">
       <Stack.Screen name="SurvayStart" component={SurvayStart} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo1" component={QuestionPage.No1} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo2" component={QuestionPage.No2} options={{ headerShown: false }} />
@@ -45,6 +44,8 @@ export default function App() {
       <Stack.Screen name="QuestionNo7" component={QuestionPage.No7} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo8" component={QuestionPage.No8} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo9" component={QuestionPage.No9} options={{ headerShown: false }} />
+      <Stack.Screen name="ResultPage" component={ResultPage} options={{ headerShown: false }}/> 
+    
     </Stack.Navigator>
   
   </NavigationContainer>    

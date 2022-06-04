@@ -3,7 +3,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import styled from 'styled-components/native'
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity,ScrollView } from 'react-native';
 import { ImageImg, StatusBarView } from '../common_components/common_components.style';
 import * as S from './question_page_components/static_components/static_components'
 import { ChoiceText, PageIndicator, QuestionText } from './question_page_components/static_components/static_components.style';
@@ -30,6 +30,7 @@ export function No1({ navigation }) {
  
 
     return (
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -77,6 +78,8 @@ export function No2({ navigation }) {
 
 
     return (
+
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -122,6 +125,8 @@ export function No3({ navigation }) {
  
 
     return (
+
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -169,6 +174,7 @@ export function No4({ navigation }) {
  
 
     return (
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -210,6 +216,8 @@ export function No5({ navigation }) {
  
 
     return (
+        <ScrollView>
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -244,6 +252,7 @@ export function No5({ navigation }) {
         </S.FirstView>
     
 
+        </ScrollView>
 
 
     );
@@ -257,6 +266,7 @@ export function No6({ navigation }) {
  
 
     return (
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -298,6 +308,7 @@ export function No7({ navigation }) {
  
 
     return (
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -311,7 +322,7 @@ export function No7({ navigation }) {
 
             <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigation.navigate('QuestionNo8')}>
                 <S.ChoiceView >
-                    <ChoiceText>이럴 줄ㄹ 알고 주변을 살펴봤지.{"\n"}저장해둔 리뷰 높은 식당으로 가자!</ChoiceText>
+                    <ChoiceText>이럴 줄 알고 주변을 살펴봤지.{"\n"}저장해둔 리뷰 높은 식당으로 가자!</ChoiceText>
                 </S.ChoiceView>
             </TouchableOpacity>
 
@@ -338,6 +349,7 @@ export function No8({ navigation }) {
  
 
     return (
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -379,6 +391,9 @@ export function No9({ navigation }) {
  
 
     return (
+
+
+
         <S.FirstView>
             <StatusBarView></StatusBarView>
             <PageIndicator></PageIndicator>
@@ -390,13 +405,13 @@ export function No9({ navigation }) {
                 <QuestionText>오늘은 슬프게도 귀국날... {"\n"}공항으로 가기 전 당신은?</QuestionText>
             </S.QuestionView>
 
-            <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigation.navigate('QuestionNo1')}>
+            <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigation.navigate('ResultPage')}>
                 <S.ChoiceView >
                     <ChoiceText>비행기 타기 전까지 여행이야.{"\n"}아침 일찍 나가서 알차게 놀자!</ChoiceText>
                 </S.ChoiceView>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigation.navigate('QuestionNo1')}>
+            <TouchableOpacity style={styles.touchableOpacity} onPress={() => navigation.navigate('ResultPage')}>
 
                 <S.ChoiceView >
                     <ChoiceText>푹 자고 일어나서 미리미리{"\n"}짐싸고 공항에 도착해서 쉰다.</ChoiceText>
