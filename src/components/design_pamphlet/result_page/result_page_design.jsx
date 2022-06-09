@@ -5,7 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import { ScrollView, StyleSheet } from 'react-native';
 import * as R  from './result_page_components/result_page_components';
 import { ImageImg, StatusBarView } from '../common_components/common_components.style';
-import { ButtonToKakaotalkShareText, ButtonToTripDiaryText, HashTagText, LogoText, ResultText, TitleText } from './result_page_components/result_page_components.style';
+import { ButtonToKakaotalkShareText, ButtonToTripDiaryText, HashTagText, LogoText, ResultText, TitleText, TypeExplanationView1Text } from './result_page_components/result_page_components.style';
 
 
 
@@ -50,7 +50,7 @@ export function Improvisive({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
-                    
+                    <TypeExplanationView1Text>즉흥적: improvisive</TypeExplanationView1Text>
                 </R.TypeExplanationView1>
 
                 <R.TypeExplanationView1>
@@ -103,7 +103,7 @@ export function Exploring({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/2.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -111,6 +111,7 @@ export function Exploring({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>탐험적: exploring</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -163,7 +164,7 @@ export function OnPlanning({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/3.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -171,6 +172,7 @@ export function OnPlanning({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>계획적: onPlanning</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -223,7 +225,7 @@ export function Efficient({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/4.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -231,6 +233,7 @@ export function Efficient({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>효율적: efficient</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -283,7 +286,7 @@ export function Passionate({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/5.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -291,6 +294,7 @@ export function Passionate({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>열정적: passionate</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -343,7 +347,7 @@ export function Flexing({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/6.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -351,6 +355,7 @@ export function Flexing({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>플렉스: flexing</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -403,7 +408,7 @@ export function Relaxing({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/7.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -411,6 +416,7 @@ export function Relaxing({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>여유로운: relaxing</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 
@@ -463,7 +469,7 @@ export function SafetyConcerning({ navigation }) {
                 </R.ResultView>
 
                 <R.ImageView>
-                    <ImageImg source={require(`../../../../public/img/survay/result_page/1.png`)}/>
+                    <ImageImg source={require(`../../../../public/img/survay/result_page/8.png`)}/>
                 </R.ImageView>
                 
                 <R.HashTagView>
@@ -471,6 +477,7 @@ export function SafetyConcerning({ navigation }) {
                 </R.HashTagView>
 
                 <R.TypeExplanationView1>
+                <TypeExplanationView1Text>안정적: safetyConcerning</TypeExplanationView1Text>
                     
                 </R.TypeExplanationView1>
 

@@ -206,6 +206,19 @@ line-height: 40px;
 text-align: center;
 `
 
+export const TypeExplanationView1Text = styled.Text`
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 36px;
+color: black;
+text-align: center;
+
+`
+
+
 
 export const ButtonToTripDiaryText = styled.Text`
 
