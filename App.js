@@ -28,16 +28,18 @@ export default function App() {
 
   console.log(windowHeight)
   console.log(windowWidth)
-
+  
 
 
   return (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="SurvayStart">
+      {/* 여행전 당신은? */}
       <Stack.Screen name="SurvayStart" component={SurvayStart} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo1" component={QuestionPage.No1} options={{ headerShown: false }}/> 
       <Stack.Screen name="QuestionNo2" component={QuestionPage.No2} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo3" component={QuestionPage.No3} options={{ headerShown: false }} />
+      {/* 여행 후 당신은? */}
       <Stack.Screen name="QuestionNo4" component={QuestionPage.No4} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo5" component={QuestionPage.No5} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo6" component={QuestionPage.No6} options={{ headerShown: false }} />
