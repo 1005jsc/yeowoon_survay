@@ -8,7 +8,7 @@ import * as QuestionPage from './src/components/design_pamphlet/question_page/qu
 import { Dimensions } from 'react-native';
 import { StatusBarView } from './src/components/design_pamphlet/common_components/common_components.style';
 import { SurvayStart } from './src/components/design_pamphlet/survay_start/survay_start_design';
-import { ResultPage } from './src/components/design_pamphlet/result_page/result_page_design';
+import { Efficient, Exploring, Flexing, Improvisive, OnPlanning, Passionate, Relaxing, SafetyConcerning } from './src/components/design_pamphlet/result_page/result_page_design';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -28,7 +28,7 @@ export default function App() {
 
   console.log(windowHeight)
   console.log(windowWidth)
-  
+
 
 
   return (
@@ -46,7 +46,15 @@ export default function App() {
       <Stack.Screen name="QuestionNo7" component={QuestionPage.No7} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo8" component={QuestionPage.No8} options={{ headerShown: false }} />
       <Stack.Screen name="QuestionNo9" component={QuestionPage.No9} options={{ headerShown: false }} />
-      <Stack.Screen name="ResultPage" component={ResultPage} options={{ headerShown: false }}/> 
+      {/* 테스트 결과 */}
+      <Stack.Screen name="improvisive" component={Improvisive} options={{ headerShown: false }}/> 
+      <Stack.Screen name="exploring" component={Exploring} options={{ headerShown: false }}/> 
+      <Stack.Screen name="onPlanning" component={OnPlanning} options={{ headerShown: false }}/> 
+      <Stack.Screen name="efficient" component={Efficient} options={{ headerShown: false }}/> 
+      <Stack.Screen name="passionate" component={Passionate} options={{ headerShown: false }}/> 
+      <Stack.Screen name="flexing" component={Flexing} options={{ headerShown: false }}/> 
+      <Stack.Screen name="relaxing" component={Relaxing} options={{ headerShown: false }}/> 
+      <Stack.Screen name="safetyConcerning" component={SafetyConcerning} options={{ headerShown: false }}/> 
     
     </Stack.Navigator>
   

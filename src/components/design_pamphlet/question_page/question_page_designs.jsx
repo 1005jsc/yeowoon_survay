@@ -745,6 +745,8 @@ export function No9({ navigation, route }) {
     }
     
 
+
+
     return (
 
 
@@ -765,9 +767,7 @@ export function No9({ navigation, route }) {
 
                 sumUpFinalResult(no9TestStart)
                 console.log(no9FinalResult)
-            //     navigation.navigate('QuestionNo4', {
-            //         no9TestResult : no9TestStart
-            // })
+                navigation.navigate(`${no9FinalResult}`)
         }
             }>
                 <S.ChoiceView >
