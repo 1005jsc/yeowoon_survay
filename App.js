@@ -1,12 +1,8 @@
 import * as React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Page1, Page2, Page3 } from './src/components/pages/pages';
 import * as QuestionPage from './src/components/design_pamphlet/question_page/question_page_designs';
 import { Dimensions } from 'react-native';
-import { StatusBarView } from './src/components/design_pamphlet/common_components/common_components.style';
 import { SurvayStart } from './src/components/design_pamphlet/survay_start/survay_start_design';
 import { Efficient, Exploring, Flexing, Improvisive, OnPlanning, Passionate, Relaxing, SafetyConcerning } from './src/components/design_pamphlet/result_page/result_page_design';
 

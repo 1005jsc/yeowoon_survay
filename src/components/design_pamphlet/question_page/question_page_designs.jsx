@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet} from 'react-native';
 import styled from 'styled-components/native'
 import { TouchableOpacity,ScrollView } from 'react-native';
 import { ImageImg, StatusBarView } from '../common_components/common_components.style';
@@ -693,7 +691,6 @@ export function No8({ navigation, route }) {
 
 export function No9({ navigation, route }) {
 
-    const [finalResult, setFinalResult] = React.useState() 
 
 
     const {no8TestResult} = route.params
@@ -739,7 +736,6 @@ export function No9({ navigation, route }) {
         const yes = Object.entries(testResult)
         const yes2 = yes.filter(smallArray => smallArray[1] >= hightestPoints)
         no9FinalResult = randomValueFromArray(yes2)[0]
-        // setFinalResult(randomValueFromArray(yes2)[0])
 
 
     }
@@ -764,9 +760,7 @@ export function No9({ navigation, route }) {
 
             <TouchableOpacity style={styles.touchableOpacity} onPress={() => {
                 selectOne()
-
                 sumUpFinalResult(no9TestStart)
-                console.log(no9FinalResult)
                 navigation.navigate(`${no9FinalResult}`)
         }
             }>
@@ -778,12 +772,9 @@ export function No9({ navigation, route }) {
             <TouchableOpacity style={styles.touchableOpacity} onPress={() => {
                 selectTwo()
                 sumUpFinalResult(no9TestStart)
-                console.log(finalResult)
+                navigation.navigate(`${no9FinalResult}`)
 
 
-            //     navigation.navigate('QuestionNo4', {
-            //         no9TestResult : no9TestStart
-            // })
         }
             }>
 
